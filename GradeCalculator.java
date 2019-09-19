@@ -70,13 +70,13 @@ public class GradeCalculator {
 			//	Labsg = keyboard.nextDouble();
 			
 
-		Exam1g = 0;
-		Exam2g = 0;
-		finalexamg = 0; 
-		Labsg = 0;
-		Projectsg = 0;
-		Participating = 0;
-		Quizzesg = 0;
+		//Exam1g = 0;
+		//Exam2g = 0;
+		//finalexamg = 0; 
+		//Labsg = 0;
+		//Projectsg = 0;
+		//Participating = 0;
+		//Quizzesg = 0;
 		
 		if (Exam1.equalsIgnoreCase("y") || (Exam1.equalsIgnoreCase("yes"))){
 		System.out.print("Score recieved on exam 1:");
@@ -145,24 +145,24 @@ public class GradeCalculator {
 			Quizzesg = 0;
 		}
 		
-		double forma, formb, formc, formd, forme, formf, formg, currentScore, total2,
-		weight1, weight2, weight3, weight4, weight5 , weight6, weight7;
+		double forma, formb, formc, formd, forme, formf, formg, currentScore, total2;
+		//weight1, weight2, weight3, weight4, weight5 , weight6, weight7;
 		forma = (exam1 * Exam1g); 
-		weight1 = forma;
+		//weight1 = forma;
 		formb = (exam2 * Exam2g);  
-		weight2 = formb;
+		//weight2 = formb;
 		formc =	(finalExam * finalexamg); 
-		weight3 = formc;
+		//weight3 = formc;
 		formd =	(labs * Labsg);  
-		weight4 = formd;
+		//weight4 = formd;
 		forme =	(projects * Projectsg); 
-		weight5 = forme;
+		//weight5 = forme;
 		formf =	(participation * Participating); 
-		weight6 = formf;
+		//weight6 = formf;
 		formg =	(quizzes * Quizzesg);
-		weight7 = formg;
-		total2 = (weight1 + weight2 + weight3 + weight4 + weight5
-				+ weight6 + weight7);
+		//weight7 = formg;
+		total2 = (exam1 + exam2 + finalExam + labs + projects
+				+ participation + quizzes);
 		currentScore = (forma + formb + formc + formd + forme + formf + formg)
 				/total2;
 		//problem is the weights not adding up correctly due to the top variables 
